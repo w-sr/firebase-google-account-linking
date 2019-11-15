@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Link Your Google Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+
+  <ion-row>
+      <ion-col text-center>  
+          <ion-icon name="logo-android"></ion-icon>
+          <div class="description-text">To link your Google profile, log in with your Dinnerbell email and password.<br/><br/></div>  
+          <ion-list>
+              <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input type="text"[(ngModel)]="username"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password"[(ngModel)]="password"></ion-input>
+              </ion-item>
+            </ion-list>
+            <button ion-button (click)="signIn()">Log In</button>
+        <br/><br/>
+        <div class="description-text">No account yet?  Download the Dinnerbell app from the Apple App Store or Android App Store to get started.</div><br/>
+        <div class="description-text">Forgot password?  Retrieve your password using the Dinnerbell app.</div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
